@@ -15,7 +15,6 @@ func viewChat(info stream.Information) func(g *gocui.Gui) error {
 		if v, err := g.SetView("chat", 0, 0, maxX-1, maxY-1, 0); err != nil {
 			v.Frame = true
 			v.Title = info.Title
-			v.Subtitle = "sub"
 			v.Wrap = true
 			v.Autoscroll = true
 			v.FrameRunes = []rune{' ', ' '}
